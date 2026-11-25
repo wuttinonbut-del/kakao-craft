@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สั่งซื้อสินค้า | KAKAO CRAFT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-order">
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container nav-inner">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-title">KAKAO <span>CRAFT</span></span>
+                <span class="brand-subtitle">Artisan Chocolatier</span>
+            </a>
+
+            <nav class="site-nav" aria-label="เมนูหลัก">
+                <a href="index.html">หน้าแรก</a>
+                <a href="product.html">คอลเลกชันสินค้า</a>
+                <a href="order.html" class="active">สั่งซื้อสินค้า</a>
+                <a href="admin.html">จัดการออเดอร์</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Order Form Section -->
+    <main class="order-main">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-eyebrow">Private Order & Chilled Delivery</span>
+                <h1 class="section-title">ยืนยันคำสั่งซื้อช็อคโกแลตคราฟต์</h1>
+                <p class="section-subtitle">กรอกข้อมูลผู้รับและรายละเอียดการจัดส่ง สินค้าทุกชิ้นบรรจุพร้อมเจลทำความเย็นและจัดส่งแบบควบคุมอุณหภูมิ</p>
+            </header>
+
+            <div class="order-card">
+                <form id="orderForm" class="order-form">
+                    <div class="form-group">
+                        <label for="customerName">ชื่อลูกค้า <span class="required">*</span></label>
+                        <input type="text" id="customerName" name="customerName" required placeholder="กรอกชื่อ-นามสกุล ผู้รับสินค้า">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact">เบอร์โทร/Line <span class="required">*</span></label>
+                        <input type="text" id="contact" name="contact" required placeholder="เช่น 08X-XXX-XXXX หรือ Line ID">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="items">รายการสินค้า <span class="required">*</span></label>
+                        <input type="text" id="items" name="items" required placeholder="ระบุชื่อสินค้าและจำนวนที่ต้องการ">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="total">จำนวนเงินรวม (บาท) <span class="required">*</span></label>
+                        <input type="text" id="total" name="total" required placeholder="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="note">หมายเหตุ / ที่อยู่จัดส่ง</label>
+                        <textarea id="note" name="note" rows="3" placeholder="ระบุที่อยู่จัดส่ง หรือข้อความเพิ่มเติมถึงทีมงาน (ถ้ามี)"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-outline-gold btn-submit">ยืนยันสั่งซื้อ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Minimal Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span class="footer-brand">KAKAO CRAFT</span>
+            <p class="footer-copy">&copy; 2026 KAKAO CRAFT Thailand • จัดส่งควบคุมอุณหภูมิทุกคำสั่งซื้อ</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
